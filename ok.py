@@ -2,16 +2,16 @@ import requests
 import hashlib
 import json
 
-ok_user_id         = "592877344261"
-ok_group_id        = "58128821518341"#ID группы gid
-ok_app_id          = "512000845549"
-ok_app_public_key  = "COOHOBKGDIHBABABA"#Публичный ключ приложения
-ok_app_private_key = "CCA5F151B2B469102AAA5667"#Секретный ключ приложения
-ok_access_token    = "tkn1Qsz2uzh0HWRv9fpLzsXkXkJjhJwK4aFSBEemspqTYMugdrg5OQdRCS8MkIGdDZyf3"#Вечный токен
+ok_user_id         = ""
+ok_group_id        = ""#ID группы gid
+ok_app_id          = ""
+ok_app_public_key  = ""#Публичный ключ приложения
+ok_app_private_key = ""#Секретный ключ приложения
+ok_access_token    = ""#Вечный токен
 ok_redirect_url    = "https://discurs.info/login.html"
 
 def ok_send_link_to_group(url):
-    ok_session_secret_key = "a558256955605191ee2a10453eb9736e"
+    ok_session_secret_key = ""
     ok_format             = "json"
     ok_method             = 'mediatopic.post'
     ok_type               = "GROUP_THEME"
@@ -32,7 +32,7 @@ def ok_send_link_to_group(url):
     print(ok_response.text)
 
 def ok_send_link_to_user(url, ok_user_id_post):
-    ok_session_secret_key = "a558256955605191ee2a10453eb9736e"
+    ok_session_secret_key = ""
     ok_format             = "json"
     ok_method             = 'mediatopic.post'
     ok_type               = "USER"
